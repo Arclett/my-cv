@@ -1,0 +1,20 @@
+.skills {
+    display: grid;
+    grid-template-columns: 300px 100px;
+    .skills__title {
+        grid-column: span 2;
+    }
+    .skills__progress {
+        display: flex;
+        justify-content: space-between;
+        .progress__part {
+            border-radius: 50%;
+            border: 1px solid $textColor;
+            height: 7px;
+            width: 7px;
+        }
+        .complete {
+            background-color: $textColor;
+        }
+    }
+}

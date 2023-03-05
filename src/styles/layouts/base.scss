@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        background-color: $mainColor;
+        color: $textColor;
+    }
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
