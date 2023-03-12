@@ -1,3 +1,28 @@
 .header {
-    height: 50px;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    .header__wrapper {
+        height: 50px;
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(to right, $mainColor 95%, $subColor 95%, $subColor 100%, $mainColor 100%);
+        border-bottom: 5px solid $subColor;
+        .change-lang {
+            display: flex;
+            color: $textColor;
+            width: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 2px;
+            div {
+                @include centered;
+                width: 50%;
+                height: 100%;
+            }
+        }
+    }
 }

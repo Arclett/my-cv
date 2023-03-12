@@ -7,12 +7,13 @@ export class Element {
         return elem;
     }
 
-    static createImage(data: { src: string; class?: string; alt: string; id?: string }) {
+    static createImage(data: { src: string; class?: string; alt: string; id?: string; title?: string }) {
         const img = new Image();
         img.src = data.src;
         img.alt = data.alt;
         if (data.class) img.className = data.class;
         if (data.id) img.id = data.id;
+        if (data.title) img.title = data.title;
         return img;
     }
 }

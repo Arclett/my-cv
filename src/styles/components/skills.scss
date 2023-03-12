@@ -1,20 +1,35 @@
 .skills {
+    h3 {
+        @include subtitle;
+        width: 100%;
+        height: 65px;
+        @include centered;
+        @include leftBorder;
+        margin-bottom: 20px;
+    }
     display: grid;
-    grid-template-columns: 300px 100px;
+    grid-template-columns: 300px 1fr;
+    grid-row-gap: 20px;
+    margin-bottom: 40px;
     .skills__title {
         grid-column: span 2;
+    }
+    .skills__part {
+        margin-left: 30px;
+        font-size: 20px;
     }
     .skills__progress {
         display: flex;
         justify-content: space-between;
+        margin-right: 30px;
         .progress__part {
             border-radius: 50%;
-            border: 1px solid $textColor;
-            height: 7px;
-            width: 7px;
+            border: 2px solid $textColor;
+            height: 9px;
+            width: 9px;
         }
         .complete {
-            background-color: $textColor;
+            background-color: $subColor;
         }
     }
 }

@@ -1,0 +1,31 @@
+.left-side {
+    display: flex;
+    flex-direction: column;
+    background-color: $mainColor;
+    color: $textColor;
+    .photo {
+        width: 70%;
+        margin: 20px auto;
+        border: 3px solid $textColor;
+    }
+    .education {
+        h3 {
+            @include subtitle;
+            @include leftBorder;
+        }
+    }
+    .language {
+        h3 {
+            @include subtitle;
+            height: 65px;
+            @include centered;
+            @include leftBorder;
+            margin-bottom: 30px;
+        }
+        div {
+            font-size: 25px;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+    }
+}

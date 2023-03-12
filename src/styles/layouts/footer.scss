@@ -1,0 +1,16 @@
+.footer {
+    height: 100px;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: $mainColor;
+    border-top: 5px solid $subColor;
+    color: $textColor;
+    font-size: 30px;
+    @include centered;
+    gap: 30px;
+    a {
+        img {
+            height: 50px;
+        }
+    }
+}

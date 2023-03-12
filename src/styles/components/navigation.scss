@@ -1,13 +1,23 @@
 .nav {
-    position: fixed;
     background-color: $mainColor;
+    max-width: 924px;
     width: 100%;
+    a {
+        text-decoration: none;
+    }
     .nav__list {
         display: flex;
         justify-content: space-evenly;
         list-style: none;
+        align-items: center;
+        margin: 0;
+        padding: 0 5px;
         .list__elem {
             color: $textColor;
+            height: 50px;
+            width: 150px;
+            font-size: 20px;
+            @include centered;
         }
     }
 }
